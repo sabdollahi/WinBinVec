@@ -12,7 +12,7 @@ In this repository, we implemented seven different deep learning models for canc
 Besides, we designed a model, <em>FusionPPI</em>, that utilizes the outperformed feature sets, namely window-based binary vectors, degree of pathogenicity, binding affinity changes upon mutations, and gene expressions. <br>
 To run each of the above models, use the following instructions: <br>
 <ol>
-  <li> Download the input feature sets. </li> 
+  <li> Download all the input feature sets and the necessary files. </li> 
   <li> Create a directory with name "DATASET" beside the models' files. </li>
   <li> Extract the downloaded files into the "DATASET" directory. </li>
 </ol>  
