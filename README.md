@@ -12,23 +12,25 @@ In this repository, we implemented seven different deep learning models for canc
 Besides, we designed a model, <em>FusionPPI</em>, that utilizes the outperformed feature sets, namely window-based binary vectors, degree of pathogenicity, binding affinity changes upon mutations, and gene expressions. <br>
 Firstly, please download the input feature sets. Next, create a directory with name "DATASET" beside the models' files. Finally, extract the downloaded files into the "DATASET" directory.
 You can download the necessary datasets from the following links:
-<b> WinBinVec Input Features </b>
+<br>
+<b> WinBinVec Input Features: </b>
 https://drive.google.com/file/d/1eALbG7wyZwjGsLG_XCy8QqtL40KkQiSp/view?usp=sharing
 <br>
-<b> Gene Expression Data </b>
+<b> Gene Expression Data: </b>
 https://drive.google.com/file/d/11pslP-6fsuj8C-9vSY2cOp3QYkcz2b5i/view?usp=sharing
 <br>
-<b> g-Gap Dipeptide DATASET </b>
+<b> g-Gap Dipeptide Input Features: </b>
 https://drive.google.com/file/d/1Bo9x_dukeCviuhf9M-h7Oqk9YAMIt1gV/view?usp=sharing
 <br>
-<b> Physicochemical Properties Input Features </b>
+<b> Physicochemical Properties Input Features: </b>
 https://drive.google.com/file/d/1UHLZrPDPrfUS69OySL98af-_-mJN6_iP/view?usp=sharing
 <br>
-<b> WinSelfAtt Input Features </b>
+<b> WinSelfAtt Input Features: </b>
 https://drive.google.com/file/d/1jNTfaVwXpichkNRSSscoktdlpmCcONQT/view?usp=sharing
 <br>
-<b> Other Input Features </b>
+<b> The other Input Features: </b>
 https://drive.google.com/file/d/1vtrJL84HhCzqMAstyDW2_h5ffELptW8i/view?usp=sharing
+<br>
 
 
 
