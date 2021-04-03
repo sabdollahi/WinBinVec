@@ -10,8 +10,13 @@ In this repository, we implemented seven different deep learning models for canc
   <li><em>PhyChemPPI</em> (Physicochemical Properties of PPIs)</li>
 </ul>
 Besides, we designed a model, <em>FusionPPI</em>, that utilizes the outperformed feature sets, namely window-based binary vectors, degree of pathogenicity, binding affinity changes upon mutations, and gene expressions. <br>
-To run each of the models, use the following instructions: <br>
-Firstly, please download the input feature sets. Next, create a directory with name "DATASET" beside the models' files. Finally, extract the downloaded files into the "DATASET" directory. <br>
+To run each of the above models, use the following instructions: <br>
+<ol>
+  <li> Download the input feature sets. </li> 
+  <li> Create a directory with name "DATASET" beside the models' files. </li>
+  <li> Extract the downloaded files into the "DATASET" directory. </li>
+</ol>  
+<br>
 You can download the necessary datasets from the following links:
 <br>
 <b> WinBinVec Input Features: </b>
