@@ -15,7 +15,7 @@ To run each of the above models, use the following instructions: <br>
   <li> Download all the input feature sets and the necessary files. </li> 
   <li> Create a directory with name "DATASET" beside the models' files. </li>
   <li> Extract the downloaded files into the "DATASET" directory. </li>
-    <li> Run  <div style="background-color:tomato;">python3 WinBinVec.py</div></li>
+    <li> Run: python3 WinBinVec.py</li>
 </ol>  
 <br>
 You can download the necessary datasets from the following links:
