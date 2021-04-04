@@ -10,6 +10,20 @@ In this repository, we implemented seven different deep learning models for canc
   <li><em>PhyChemPPI</em> (Physicochemical Properties of PPIs)</li>
 </ul>
 Besides, we designed a model, <em>FusionPPI</em>, that utilizes the outperformed feature sets, namely window-based binary vectors, degree of pathogenicity, binding affinity changes upon mutations, and gene expressions. <br>
+<h2> Prerequisite </h2>
+The following libraries are prerequisite for running the WinBinVec models:
+<ul>
+  <li> PyTorch &#8805; 1.7 </li>
+  <li> pickle &#8805; 4.0 </li>
+  <li> pandas &#8805; 1.1.5 </li>
+  <li> sklearn &#8805; 0.19.1 </li>
+  <li> numpy &#8805; 1.19.5 </li>
+  <li> seaborn &#8805; 0.9.0 </li>
+  <li> json &#8805; 2.0.9 </li>
+  <li> matplotlib &#8805; 3.3.4 </li>
+  <li> lifelines &#8805; 0.24.9 </li>
+</ul>
+<h2> Run the models </h2>
 To run each of the above models, use the following instructions: <br>
 <ol>
   <li> Download all the input feature sets and the necessary files. </li> 
