@@ -1,3 +1,8 @@
+<style>
+    .codeclass {
+        background-color: #EBEBEB;
+    }
+</style>
 <h1> WinBinVec </h1>
 In this repository, we implemented seven different deep learning models for cancer type prediction and metastasis prediction using protein-protein interactions' sequences:
 <ul>
@@ -15,6 +20,7 @@ To run each of the above models, use the following instructions: <br>
   <li> Download all the input feature sets and the necessary files. </li> 
   <li> Create a directory with name "DATASET" beside the models' files. </li>
   <li> Extract the downloaded files into the "DATASET" directory. </li>
+  <li> Run <div  class="codeclass">python3 WinBinVec.py</div> </li>
 </ol>  
 <br>
 You can download the necessary datasets from the following links:
@@ -34,7 +40,7 @@ https://drive.google.com/file/d/1UHLZrPDPrfUS69OySL98af-_-mJN6_iP/view?usp=shari
 <b> WinSelfAtt Input Features: </b>
 https://drive.google.com/file/d/1jNTfaVwXpichkNRSSscoktdlpmCcONQT/view?usp=sharing
 <br>
-<b> The other Input Features: </b>
+<b> The other Input Features and the necessary files: </b>
 https://drive.google.com/file/d/1vtrJL84HhCzqMAstyDW2_h5ffELptW8i/view?usp=sharing
 <br>
 
