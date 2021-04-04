@@ -55,4 +55,8 @@ https://drive.google.com/file/d/1vtrJL84HhCzqMAstyDW2_h5ffELptW8i/view?usp=shari
 
 
 
-Furthermore, this repository provides the codes for data processing and data cleaning including: PDB-related processing, Standard deviation of the mutation accumulation, Extraction of the positions of the available amino acids in each PDB files, Window selection method, and plotting the figures.
+Furthermore, this repository provides the codes for data processing and data cleaning including: PDB-related processing, Standard deviation of the mutation accumulation, Extraction of the positions of the available amino acids in each PDB files, Window selection method, and plotting the figures. <br>
+You can obtain the protein-protein interactions list including their PDB ids in the following box:
+<textarea rows="4" cols="50" readonly>
+Test
+</textarea>
