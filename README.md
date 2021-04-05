@@ -31,6 +31,9 @@ To run each of the above models, use the following instructions: <br>
   <li> Extract the downloaded files into the "DATASET" directory. </li>
     <li> Run: python3 WinBinVec.py</li>
 </ol>  
+If you want to get the other models' performance, you need to run <em>python3 [A-MODEL-NAME].py</em> by replacing [A-MODEL-NAME] with the name of your model of interest.
+<br>
+We also designed a second version of the WinBinVec model, WinBinVec-FC. In this case, we utilized fully-connected layers modules instead of 1-dimensional convolutional module. The results (accuracy, PR, and AUC) reveal that the original version of the WinBinVec model (using 1-dimensional convolutional module) outperforms the second version.
 <br>
 You can download the necessary datasets from the following links:
 <br>
