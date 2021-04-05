@@ -59,6 +59,10 @@ https://drive.google.com/file/d/1iWQIPi02xnZ5ayU6f8kZvqobSiGjTJW5/view?usp=shari
 
 
 Furthermore, this repository provides the codes for data processing and data cleaning including: PDB-related processing, Standard deviation of the mutation accumulation, Extraction of the positions of the available amino acids in each PDB files, Window selection method, and plotting the figures. <br>
+You can obtain the predicted essentialities of the WinBinVec model and the MEDICI model using the following link: <br>
+https://drive.google.com/file/d/1XSbqIRLFOXEpOHRUlxXk_OGHjxiM4o-0/view?usp=sharing
+<br>
+
 You can obtain the protein-protein interactions list including their PDB ids in the following box:
 <table style="width:100%">
   <tr>
