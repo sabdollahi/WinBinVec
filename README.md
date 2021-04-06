@@ -35,6 +35,7 @@ If you want to get the other models' performance, you need to run <b>python3 [A-
 <br>
 We also designed a second version of the WinBinVec model, WinBinVec-FC. In this case, we utilized fully-connected layers modules instead of 1-dimensional convolutional module. The results (accuracy, PR, and AUC) reveal that the original version of the WinBinVec model (using 1-dimensional convolutional module) outperforms the second version.
 <br>
+<h2> Datasets </h2>
 <br>
 You can download the necessary datasets from the following links:
 <br>
