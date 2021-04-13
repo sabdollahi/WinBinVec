@@ -35,6 +35,7 @@ If you want to get the other models' performance, you need to run <b>python3 [A-
 <br>
 We also designed a second version of the WinBinVec model, WinBinVec-FC. In this case, we utilized fully-connected layers modules instead of 1-dimensional convolutional module. The results (accuracy, PR, and AUC) reveal that the original version of the WinBinVec model (using 1-dimensional convolutional module) outperforms the second version.
 <br>
+To preprocess your VCF-format data, you need to make an instance of class "TCGADataPreprocessing". Then, call one of the preprocessing methods. Notice that before using this class, you need to download the preprocessing necessary files from the "Datasets" section. Moreover, you need to annotate the TCGA dataset using ANNOVAR and rename the name directory to "TCGA_ANNOVAR". Please be sure that the annotated files are located in the "annovar_annotates" directory.
 <h2> Datasets </h2>
 You can download the necessary datasets from the following links:
 <br>
