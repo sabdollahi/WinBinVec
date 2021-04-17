@@ -67,8 +67,8 @@ We also designed a second version of the WinBinVec model, WinBinVec-FC. In this 
 To preprocess your VCF-format data, you need to make an instance of class "TCGADataPreprocessing". Then, call one of the preprocessing methods. Notice that before using this class, you need to download the preprocessing necessary files from the "Datasets" section. Moreover, you need to annotate the TCGA dataset using ANNOVAR and rename the name directory to "TCGA_ANNOVAR". Please be sure that the annotated files are located in the "annovar_annotates" directory.
 <br>
 The functions of the TCGADataPreprocessing are as follows: <br>
-<b>(1)<b> <em>extract_partner_proteins:</em> To find the proteins' sequences involved in the Protein-Protein Interactions from UniProt. <br>
-<b>(2)<b> <em>save_biophysical_PPIs:</em> To obtain the proteins Python-dictionary with their corresponding interaction ids. (The interactions must be have Identities >= 90) <br>
+<b>(1)</b> <em>extract_partner_proteins:</em> To find the proteins' sequences involved in the Protein-Protein Interactions from UniProt. <br>
+<b>(2)</b> <em>save_biophysical_PPIs:</em> To obtain the proteins Python-dictionary with their corresponding interaction ids. (The interactions must be have Identities >= 90) <br>
 
 
 <h1> Biophysical Protein-Protein Interactions </h1>
