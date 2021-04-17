@@ -23,19 +23,7 @@ The following libraries are prerequisite for running the WinBinVec models:
   <li> matplotlib &#8805; 3.3.4 </li>
   <li> lifelines &#8805; 0.24.9 </li>
 </ul>
-<h2> Run the models </h2>
-To run each of the above models, use the following instructions: <br>
-<ol>
-  <li> Download all the input feature sets and the necessary files. </li> 
-  <li> Create a directory with name "DATASET" beside the models' files. </li>
-  <li> Extract the downloaded files into the "DATASET" directory. </li>
-    <li> Run: python3 WinBinVec.py</li>
-</ol>  
-If you want to get the other models' performance, you need to run <b>python3 [A-MODEL-NAME].py</b> by replacing [A-MODEL-NAME] with the name of your model of interest.
-<br>
-We also designed a second version of the WinBinVec model, WinBinVec-FC. In this case, we utilized fully-connected layers modules instead of 1-dimensional convolutional module. The results (accuracy, PR, and AUC) reveal that the original version of the WinBinVec model (using 1-dimensional convolutional module) outperforms the second version.
-<br>
-To preprocess your VCF-format data, you need to make an instance of class "TCGADataPreprocessing". Then, call one of the preprocessing methods. Notice that before using this class, you need to download the preprocessing necessary files from the "Datasets" section. Moreover, you need to annotate the TCGA dataset using ANNOVAR and rename the name directory to "TCGA_ANNOVAR". Please be sure that the annotated files are located in the "annovar_annotates" directory.
+
 <h2> Datasets </h2>
 You can download the necessary datasets from the following links:
 <br>
@@ -60,13 +48,24 @@ https://drive.google.com/file/d/1vtrJL84HhCzqMAstyDW2_h5ffELptW8i/view?usp=shari
 <b> The preprocessing necessary files: </b>
 https://drive.google.com/file/d/1iWQIPi02xnZ5ayU6f8kZvqobSiGjTJW5/view?usp=sharing
 <br>
-
-
-
 Furthermore, this repository provides the codes for data processing and data cleaning including: PDB-related processing, Standard deviation of the mutation accumulation, Extraction of the positions of the available amino acids in each PDB files, Window selection method, and plotting the figures. <br>
 You can obtain the predicted essentiality values (cancer-associated PPIs) of the WinBinVec model and the MEDICI model using the following link: <br>
 https://drive.google.com/file/d/1XSbqIRLFOXEpOHRUlxXk_OGHjxiM4o-0/view?usp=sharing
+
+<h2> Run the models </h2>
+To run each of the above models, use the following instructions: <br>
+<ol>
+  <li> Download all the input feature sets and the necessary files. </li> 
+  <li> Create a directory with name "DATASET" beside the models' files. </li>
+  <li> Extract the downloaded files into the "DATASET" directory. </li>
+    <li> Run: python3 WinBinVec.py</li>
+</ol>  
+If you want to get the other models' performance, you need to run <b>python3 [A-MODEL-NAME].py</b> by replacing [A-MODEL-NAME] with the name of your model of interest.
 <br>
+We also designed a second version of the WinBinVec model, WinBinVec-FC. In this case, we utilized fully-connected layers modules instead of 1-dimensional convolutional module. The results (accuracy, PR, and AUC) reveal that the original version of the WinBinVec model (using 1-dimensional convolutional module) outperforms the second version.
+<br>
+To preprocess your VCF-format data, you need to make an instance of class "TCGADataPreprocessing". Then, call one of the preprocessing methods. Notice that before using this class, you need to download the preprocessing necessary files from the "Datasets" section. Moreover, you need to annotate the TCGA dataset using ANNOVAR and rename the name directory to "TCGA_ANNOVAR". Please be sure that the annotated files are located in the "annovar_annotates" directory.
+
 
 You can obtain the protein-protein interactions list including their PDB ids in the following box:
 <table style="width:100%">
