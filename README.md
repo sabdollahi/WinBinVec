@@ -65,7 +65,7 @@ If you want to get the other models' performance, you need to run <b>python3 [A-
 We also designed a second version of the WinBinVec model, WinBinVec-FC. In this case, we utilized fully-connected layers modules instead of 1-dimensional convolutional module. The results (accuracy, PR, and AUC) reveal that the original version of the WinBinVec model (using 1-dimensional convolutional module) outperforms the second version.
 <br>
 To preprocess your VCF-format data, you need to make an instance of class "TCGADataPreprocessing". Then, call one of the preprocessing methods. Notice that before using this class, you need to download the preprocessing necessary files from the "Datasets" section. Moreover, you need to annotate the TCGA dataset using ANNOVAR and rename the name directory to "TCGA_ANNOVAR". Please be sure that the annotated files are located in the "annovar_annotates" directory.
-<br>
+<hr>
 The functions of the TCGADataPreprocessing are as follows: <br>
 <b>(1)</b> <em>extract_partner_proteins:</em> To find the proteins' sequences involved in the Protein-Protein Interactions from UniProt. <br>
 <b>(2)</b> <em>save_biophysical_PPIs:</em> To obtain the proteins Python-dictionary with their corresponding interaction ids. (The interactions must be have Identities >= 90) <br>
