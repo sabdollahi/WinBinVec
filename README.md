@@ -69,9 +69,26 @@ To preprocess your VCF-format data, you need to make an instance of class "TCGAD
 The functions of the TCGADataPreprocessing are as follows: <br>
 <b>(1)</b> <em>extract_partner_proteins:</em> To find the proteins' sequences involved in the Protein-Protein Interactions from UniProt. <br>
 <b>(2)</b> <em>save_biophysical_PPIs:</em> To obtain the proteins Python-dictionary with their corresponding interaction ids. (The interactions must be have Identities >= 90) <br>
+<b>(3)</b> <em>keep_PPIs_based_on_bit_score_and_evalue:</em> To remove the PPIs with bit_score < 50 and e_value > 0.000001 <br>
+<b>(4)</b> <em>create_ATOM_files:</em> Create the ATOM files and obtain the chain sequences for Protein-Protein Interactions. (This method sends multiple requests to the RCSB website to obtain the ATOM files) <br>
+<b>(5)</b> <em>extract_start_end_positions_one_part:</em> To extract the start and end positions for those proteins which their corresponding PDB and chain sequence has only one part (e.g. ----XXXXXXX-, where '-' represents the missing amino acids) <br>
+<b>(6)</b> <em>extract_start_end_positions_more_parts:</em> To extract the start and end positions (more than one <start,end>) for those proteins which their corresponding PDB and chain sequence has more than one part (e.g. ----XXXXXXX---XXX-XXXX---, where '-' represents the missing amino acids)<br>
+<b>(7)</b> <em>organize_indices:</em> To organize the indices. (Show the exact position of start and ends)<br>
+<b>(8)</b> <em>save_RefSeq_positions</em> To pickle the RefSeq positions.<br>
+<b>(9)</b> <em>create_rosetta_json_files:</em> To create pdb2rosetta and rosetta2pdb json files (for flex ddG)<br>
+<b>(10)</b> <em>prepare_rosetta_files:</em> To prepare 'resfile' and 'mutfile' files in 'PatientsPPImutationsData' directory (It is for extracting the mutations and the exactly position of the mutations in two different standard positions - 1. Rosetta 2. pdb ATOM position)<br>
+<b>(11)</b> <em>PDB_chain_starting_Rosetta_Num:</em> Each chain in an PDB complex has a starting Rosetta number.<br>
+<b>(12)</b> <em>extract_RefSeqID_sequences_from_NCBI:</em> To extract RefSeqGene ID protein (amino acid) sequences from NCBI website.<br>
+<b>(13)</b> <em>create_mutfile_resfile_Rosetta:</em> To report the mutations occurred in each PDB complex. It creates files for mutations.resfile, mutations.mutfile, nataa_mutations.resfile, and chains_to_move.txt for each PDB complex<br>
+<b>(14)</b> <em>extract_position_mutated_aminoacids</em> To extract the positions of all amino acids which are mutated in all patients  (These position are the positions in the available amino acids in PDB file. The positions in "mut_positions_RefSeq" are sorted!) We will keep only these position for our analysis process. For example: original_AA_sequence => ABCDEFGHIJKLMN and mut_positions_RefSeq => [1,3,6,8,9]; the result will be => ACFHI<br>
+<b>(15)</b> <em>keep_aa_reported_in_ATOM_files:</em> To trim the sequences (Keep those Amino Acids which their ATOMs has reported in PDB)<br>
+<b>(16)</b> <em>extract_aa_mutated:</em> We extract amino acids in the specific positions reported in "mut_positions_RefSeq". "mut_positions_RefSeq" only keeps the positions of the amino acids which mutated in at least one patient.<br>
+<b>(17)</b> <em>obtain_patients_sequences:</em> To obtain Each Patient final sequence after mutations (just mutated sequences) to feed as a sequence to our model. If there is no mutation occurred in a PPI, then we do not save its sequence in "PatientsSequencesInEachRefSeqChain" folder. In the case that there is no mutation in a PPI, you must use its sequence in "RefSeq_KeepOnlyMutatedAminoAcidsInAllPatients" folder<br>
+<b>(18)</b> <em>extract_important_windows:</em> To extract Mutation Windows with high Standard Deviation of the frequency of mutations occur in different cancer types.<br>
+<b>(19)</b> <em>extract_important_windows_binary_vectors:</em> Use Mutation Windows (with high Standard Deviation of the frequency of mutations occur in different cancer types) to construct each patient's input features.<br>
+<b>(20)</b> <em>extract_important_windows_selfatt:</em> Use Mutation Windows (with high Standard Deviation of the frequency of mutations occur in different cancer types) to construct each patient's input features (This version is for the NLP-based Data Extraction)<br>
 
-
-<h1> Biophysical Protein-Protein Interactions </h1>
+<h2> Biophysical Protein-Protein Interactions </h2>
 You can obtain the protein-protein interactions list including their PDB ids in the following box:
 <table style="width:100%">
   <tr>
