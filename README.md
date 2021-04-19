@@ -59,9 +59,12 @@ To run each of the above models, use the following instructions: <br>
   <li> Create a directory with name "DATASET" beside the models' files. </li>
   <li> Extract the downloaded files into the "DATASET" directory. </li>
   <ul>
-      <li>Note that to extract all files in <b>"The other Input Features and the necessary files"</b> into 'DATASET' directory without creating a new directory in 'DATASET' (Be sure that <em>"TCGA_clinical_dataframe.pickle"</em>, <em>"Adj.pickle"</em>, <em>"BindingAffinilityDataframe.pickle"</em>, <em>"cancer_type.xlsx"</em>, <em>"OncomineSMFM.pickle"</em>, and <em>"Physicochemical_Properties_PCA15.pickle"</em> files are located in 'DATASET' folder directly!) </li>
+      <li>Note that to extract all files of <b>"The other Input Features and the necessary files"</b> into 'DATASET' directory without creating a new directory in 'DATASET' (Be sure that <em>"TCGA_clinical_dataframe.pickle"</em>, <em>"Adj.pickle"</em>, <em>"BindingAffinilityDataframe.pickle"</em>, <em>"cancer_type.xlsx"</em>, <em>"OncomineSMFM.pickle"</em>, and <em>"Physicochemical_Properties_PCA15.pickle"</em> files are located in 'DATASET' folder directly!) </li>
     </ul>
   <li> Run: python3 WinBinVec.py</li>
+    <ul>
+      <li>Each model has 20 shuffled epochs with 50 repetitions (normal epochs). In total, each model needs 1000 (= 20 &#215; 50) epochs for training part. </li>
+    </ul>
 </ol>  
 If you want to get the other models' performance, you need to run <b>python3 [A-MODEL-NAME].py</b> by replacing [A-MODEL-NAME] with the name of your model of interest.
 <br>
