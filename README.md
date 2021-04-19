@@ -11,7 +11,7 @@ In this repository, we implemented seven different deep learning models for canc
 </ul>
 Besides, we designed a model, <em>FusionPPI</em>, that utilizes the outperformed feature sets, namely window-based binary vectors, degree of pathogenicity, binding affinity changes upon mutations, and gene expressions. <br>
 <h2> Prerequisite </h2>
-The following libraries are prerequisite for running the WinBinVec models:
+The following libraries are prerequisite for running the WinBinVec models (in Python3):
 <ul>
   <li> PyTorch &#8805; 1.7 </li>
   <li> pickle &#8805; 4.0 </li>
