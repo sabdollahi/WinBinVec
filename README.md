@@ -63,6 +63,7 @@ To run each of the above models, use the following instructions: <br>
     </ul>
   <li> Run: python3 WinBinVec.py</li>
     <ul>
+      <li>You can also run the programs using <em>Jupyter</em>, but be sure to locate 'DATASET' directory beside the Jupyter notebook file. </li>
       <li>Each model has 20 shuffled epochs with 50 repetitions (normal epochs). In total, each model needs 1000 (= 20 &#215; 50) epochs for training part. </li>
     </ul>
 </ol>  
