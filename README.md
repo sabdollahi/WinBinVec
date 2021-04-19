@@ -58,7 +58,10 @@ To run each of the above models, use the following instructions: <br>
   <li> Download all the input feature sets and the necessary files. </li> 
   <li> Create a directory with name "DATASET" beside the models' files. </li>
   <li> Extract the downloaded files into the "DATASET" directory. </li>
-    <li> Run: python3 WinBinVec.py</li>
+  <ul>
+      <li>Note that to extract all files in "The other Input Features and the necessary files" into 'DATASET' directory without creating a new directory in 'DATASET' (Be sure <em>TCGA_clinical_dataframe.pickle</em>, Adj.pickle, BindingAffinilityDataframe.pickle, cancer_type.xlsx, OncomineSMFM.pickle, and Physicochemical_Properties_PCA15.pickle are in 'DATASET' folder directly!) </li>
+    </ul>
+  <li> Run: python3 WinBinVec.py</li>
 </ol>  
 If you want to get the other models' performance, you need to run <b>python3 [A-MODEL-NAME].py</b> by replacing [A-MODEL-NAME] with the name of your model of interest.
 <br>
