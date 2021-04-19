@@ -59,7 +59,7 @@ To run each of the above models, use the following instructions: <br>
   <li> Create a directory with name "DATASET" beside the models' files. </li>
   <li> Extract the downloaded files into the "DATASET" directory. </li>
   <ul>
-      <li>Note that to extract all files in "The other Input Features and the necessary files" into 'DATASET' directory without creating a new directory in 'DATASET' (Be sure <em>TCGA_clinical_dataframe.pickle</em>, Adj.pickle, BindingAffinilityDataframe.pickle, cancer_type.xlsx, OncomineSMFM.pickle, and Physicochemical_Properties_PCA15.pickle are in 'DATASET' folder directly!) </li>
+      <li>Note that to extract all files in <b>"The other Input Features and the necessary files"</b> into 'DATASET' directory without creating a new directory in 'DATASET' (Be sure that <em>"TCGA_clinical_dataframe.pickle"</em>, <em>"Adj.pickle"</em>, <em>"BindingAffinilityDataframe.pickle"</em>, <em>"cancer_type.xlsx"</em>, <em>"OncomineSMFM.pickle"</em>, and <em>"Physicochemical_Properties_PCA15.pickle"</em> files are located in 'DATASET' folder directly!) </li>
     </ul>
   <li> Run: python3 WinBinVec.py</li>
 </ol>  
