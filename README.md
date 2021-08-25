@@ -27,26 +27,7 @@ The following libraries are prerequisite for running the WinBinVec models (in Py
 <h2> Datasets </h2>
 You can download the necessary datasets from the following links:
 <br>
-<b> WinBinVec Input Features: </b>
-https://drive.google.com/file/d/1eALbG7wyZwjGsLG_XCy8QqtL40KkQiSp/view?usp=sharing
-<br>
-<b> Gene Expression Data: </b>
-https://drive.google.com/file/d/11pslP-6fsuj8C-9vSY2cOp3QYkcz2b5i/view?usp=sharing
-<br>
-<b> g-Gap Dipeptide Input Features: </b>
-https://drive.google.com/file/d/1Bo9x_dukeCviuhf9M-h7Oqk9YAMIt1gV/view?usp=sharing
-<br>
-<b> Physicochemical Properties Input Features: </b>
-https://drive.google.com/file/d/1UHLZrPDPrfUS69OySL98af-_-mJN6_iP/view?usp=sharing
-<br>
-<b> WinSelfAtt Input Features: </b>
-https://drive.google.com/file/d/1jNTfaVwXpichkNRSSscoktdlpmCcONQT/view?usp=sharing
-<br>
-<b> The other Input Features and the necessary files: </b>
-https://drive.google.com/file/d/1vtrJL84HhCzqMAstyDW2_h5ffELptW8i/view?usp=sharing
-<br>
-<b> The preprocessing necessary files: </b>
-https://drive.google.com/file/d/1iWQIPi02xnZ5ayU6f8kZvqobSiGjTJW5/view?usp=sharing
+<b> To download the WinBinVec datasets, please click <a href="https://drive.google.com/file/d/1eALbG7wyZwjGsLG_XCy8QqtL40KkQiSp/view?usp=sharing"> HERE </a> </b>
 <br>
 Furthermore, this repository provides the codes for data processing and data cleaning including: PDB-related processing, Standard deviation of the mutation accumulation, Extraction of the positions of the available amino acids in each PDB files, Window selection method, and plotting the figures. <br>
 You can obtain the predicted essentiality values (cancer-associated PPIs) of the WinBinVec model and the MEDICI model using the following link: <br>
